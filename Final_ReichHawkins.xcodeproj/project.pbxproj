@@ -16,6 +16,8 @@
 		DA41CB311C1751A40086FDA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA41CB2F1C1751A40086FDA6 /* LaunchScreen.storyboard */; };
 		DA41CB3C1C1751A40086FDA6 /* Final_ReichHawkinsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41CB3B1C1751A40086FDA6 /* Final_ReichHawkinsTests.swift */; };
 		DA41CB471C1751A40086FDA6 /* Final_ReichHawkinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41CB461C1751A40086FDA6 /* Final_ReichHawkinsUITests.swift */; };
+		DA4FDFCE1C1A65E400007309 /* IntroScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FDFCD1C1A65E400007309 /* IntroScene.swift */; };
+		DA4FDFD01C1A689200007309 /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FDFCF1C1A689200007309 /* EndScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DA41CB421C1751A40086FDA6 /* Final_ReichHawkinsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Final_ReichHawkinsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA41CB461C1751A40086FDA6 /* Final_ReichHawkinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ReichHawkinsUITests.swift; sourceTree = "<group>"; };
 		DA41CB481C1751A40086FDA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA4FDFCD1C1A65E400007309 /* IntroScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroScene.swift; sourceTree = "<group>"; };
+		DA4FDFCF1C1A689200007309 /* EndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				DA41CB221C1751A40086FDA6 /* AppDelegate.swift */,
-				DA41CB241C1751A40086FDA6 /* GameScene.sks */,
-				DA41CB261C1751A40086FDA6 /* GameScene.swift */,
 				DA41CB281C1751A40086FDA6 /* GameViewController.swift */,
-				DA41CB2A1C1751A40086FDA6 /* Main.storyboard */,
-				DA41CB2D1C1751A40086FDA6 /* Assets.xcassets */,
-				DA41CB2F1C1751A40086FDA6 /* LaunchScreen.storyboard */,
+				DA4FDFD11C1A689E00007309 /* Scenes */,
+				DA4FDFD21C1A68AD00007309 /* Assets */,
 				DA41CB321C1751A40086FDA6 /* Info.plist */,
 			);
 			path = Final_ReichHawkins;
@@ -129,6 +130,27 @@
 				DA41CB481C1751A40086FDA6 /* Info.plist */,
 			);
 			path = Final_ReichHawkinsUITests;
+			sourceTree = "<group>";
+		};
+		DA4FDFD11C1A689E00007309 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DA4FDFCD1C1A65E400007309 /* IntroScene.swift */,
+				DA41CB261C1751A40086FDA6 /* GameScene.swift */,
+				DA41CB241C1751A40086FDA6 /* GameScene.sks */,
+				DA4FDFCF1C1A689200007309 /* EndScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		DA4FDFD21C1A68AD00007309 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DA41CB2A1C1751A40086FDA6 /* Main.storyboard */,
+				DA41CB2D1C1751A40086FDA6 /* Assets.xcassets */,
+				DA41CB2F1C1751A40086FDA6 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA41CB271C1751A40086FDA6 /* GameScene.swift in Sources */,
+				DA4FDFCE1C1A65E400007309 /* IntroScene.swift in Sources */,
 				DA41CB291C1751A40086FDA6 /* GameViewController.swift in Sources */,
 				DA41CB231C1751A40086FDA6 /* AppDelegate.swift in Sources */,
+				DA4FDFD01C1A689200007309 /* EndScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +518,7 @@
 				DA41CB4D1C1751A40086FDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA41CB4E1C1751A40086FDA6 /* Build configuration list for PBXNativeTarget "Final_ReichHawkinsTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +527,7 @@
 				DA41CB501C1751A40086FDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA41CB511C1751A40086FDA6 /* Build configuration list for PBXNativeTarget "Final_ReichHawkinsUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +536,7 @@
 				DA41CB531C1751A40086FDA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
